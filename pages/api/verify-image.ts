@@ -47,6 +47,7 @@ export default withSession(async (
     await axios.post("https://api.pinata.cloud/pinning/pinFileToIPFS", formData, {
       maxBodyLength: Infinity,
       headers: {
+        'Accept': 'application/json, text/plain',
         "Content-Type": `multipart/form-data; boundary=${formData.getBoundary()}`,
         pinata_api_key: pinataApiKey,
         pinata_secret_api_key: pinataSecretApiKey
