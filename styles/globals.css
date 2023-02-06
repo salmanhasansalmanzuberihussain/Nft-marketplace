@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Toastify_spinner {
+  border-color: var(--toastify-spinner-color-empty-area) !important;
+  border-right-color: var(--toastify-spinner-color) !important;
+}
